@@ -23,6 +23,7 @@ export function init() {
 }
 
 export function drawChromeBoiAtCoords(x, y) {
+
   
   const canvas = document.querySelector("canvas") // sloppy but we haven't introduced lifecycle methods and canvas wouldn't be rendered
   const ctx = canvas.getContext("2d")
@@ -36,7 +37,6 @@ export function drawChromeBoiAtCoords(x, y) {
   } else {
     img = def
   }
-  
   ctx.drawImage(img, x - cX - 50, y - cY - 80, sizeX, sizeY)
 }
 
