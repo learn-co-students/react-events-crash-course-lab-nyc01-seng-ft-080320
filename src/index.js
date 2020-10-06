@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './App';
 import { init } from './canvasHelpers'
-import ChromeBoisDomain from './ChromeBoisDomain.js'
 
 init()
 
-ReactDOM.render(<ChromeBoisDomain />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
